@@ -1,0 +1,4 @@
+from cla:rp/cla/items/main import BasicItemModel
+
+BasicItemModel("deco/table")
+BasicItemModel("deco/chair")

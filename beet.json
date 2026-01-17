@@ -1,0 +1,23 @@
+{
+    "name": "community-legitiawards",
+    "author": "Trplnr",
+    "minecraft": "1.21.10",
+    "data_pack": {
+        "load": ["src"],
+        "description": "The official data pack for the Community LegitiAwards hosted anually",
+        "min_format": [88,0],
+        "max_format": [88.0]
+    },
+    "resource_pack": {
+        "load": ["src"],
+        "description": "The official resource pack for the Community LegitiAwards hosted anually",
+        "min_format": [69,0],
+        "max_format": [69.0]
+    },
+    "require": ["bolt"],
+    "pipeline": ["mecha"],
+    "meta": {
+        "bolt": {"entrypoint": "cla:*"}
+    },
+    "output": "build"
+}

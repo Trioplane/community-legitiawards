@@ -1,0 +1,34 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "full",
+        "model": {
+          "type": "model",
+          "model": "cla:item/deco/title_full"
+        }
+      },
+      {
+        "when": "top",
+        "model": {
+          "type": "model",
+          "model": "cla:item/deco/title_top"
+        }
+      },
+      {
+        "when": "bottom",
+        "model": {
+          "type": "model",
+          "model": "cla:item/deco/title_bottom"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "cla:item/deco/title_full"
+    }
+  }
+}
