@@ -1,0 +1,7 @@
+from cla:rp/cla/items/main import BasicItemModel
+
+BasicItemModel("bronze_reef")
+BasicItemModel("silver_reef")
+BasicItemModel("golden_reef")
+BasicItemModel("amethyst_reef")
+BasicItemModel("deco/curtain")
