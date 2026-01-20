@@ -1,0 +1,364 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/1.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue001"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/2.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue002"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/3.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue003"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/4.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue004"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/5.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue005"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/6.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue006"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/7.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue007"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/8.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue008"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/9.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue009"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/10.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue010"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/11.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue011"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/12.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue012"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/13.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue013"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/14.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue014"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/15.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue015"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/16.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue016"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/17.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue017"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/18.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue018"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/19.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue019"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/20.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue020"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/21.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue021"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/22.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue022"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/23.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue023"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/24.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue024"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/25.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue025"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/26.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue026"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/27.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue027"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/28.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue028"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/29.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue029"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/30.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue030"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/31.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue031"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/32.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue032"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/33.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue033"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/34.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue034"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/35.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue035"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/36.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue036"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/37.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue037"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/38.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue038"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/39.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue039"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/slash/40.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue040"
+      ]
+    }
+  ]
+}

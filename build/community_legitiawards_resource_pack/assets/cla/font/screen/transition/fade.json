@@ -1,0 +1,364 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/1.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue001"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/2.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue002"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/3.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue003"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/4.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue004"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/5.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue005"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/6.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue006"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/7.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue007"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/8.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue008"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/9.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue009"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/10.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue010"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/11.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue011"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/12.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue012"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/13.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue013"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/14.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue014"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/15.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue015"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/16.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue016"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/17.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue017"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/18.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue018"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/19.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue019"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/20.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue020"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/21.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue021"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/22.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue022"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/23.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue023"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/24.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue024"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/25.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue025"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/26.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue026"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/27.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue027"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/28.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue028"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/29.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue029"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/30.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue030"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/31.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue031"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/32.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue032"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/33.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue033"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/34.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue034"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/35.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue035"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/36.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue036"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/37.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue037"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/38.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue038"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/39.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue039"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "cla:font/screen/transition/fade/40.png",
+      "height": 256,
+      "ascent": 128,
+      "chars": [
+        "\ue040"
+      ]
+    }
+  ]
+}

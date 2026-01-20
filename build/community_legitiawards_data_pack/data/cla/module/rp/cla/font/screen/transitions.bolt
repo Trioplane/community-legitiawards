@@ -1,3 +1,5 @@
 from cla:rp/cla/font/main import FontTransition
 
 FontTransition("testing")
+FontTransition("fade")
+FontTransition("slash")
