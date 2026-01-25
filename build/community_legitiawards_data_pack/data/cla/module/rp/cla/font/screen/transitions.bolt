@@ -1,5 +1,7 @@
 from cla:rp/cla/font/main import FontTransition
 
-FontTransition("testing")
-FontTransition("fade")
 FontTransition("slash")
+FontTransition("cla_in")
+FontTransition("cla_out")
+FontTransition("award_goes_to_in")
+FontTransition("award_goes_to_out")

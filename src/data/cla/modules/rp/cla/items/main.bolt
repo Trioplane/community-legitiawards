@@ -8,6 +8,17 @@ class BasicItemModel:
             }
         }
 
+class OversizedInGuiItemModel:
+    def __init__(self, model_path):
+        self.model_path = model_path
+        item_model f"cla:{model_path}" {
+            "model": {
+                "type": "model",
+                "model": f"cla:item/{model_path}"
+            },
+            "oversized_in_gui": true
+        }
+
 class VariantItemModel:
     def __init__(self, model_path, variants):
         self.model_path = model_path

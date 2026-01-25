@@ -1,5 +1,8 @@
 {
     "container.crafting": "",
     "effect.minecraft.saturation": "",
-    "effect.duration.infinite": ""
+    "effect.duration.infinite": "",
+    "key.categories.inventory": "",
+    "container.inventory": "",
+    "container.enderchest": ""
 }

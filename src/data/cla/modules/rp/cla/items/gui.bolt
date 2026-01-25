@@ -1,0 +1,5 @@
+from cla:rp/cla/items/main import OversizedInGuiItemModel
+
+OversizedInGuiItemModel("gui/vote")
+OversizedInGuiItemModel("gui/vote_selected")
+OversizedInGuiItemModel("gui/slot")

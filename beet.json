@@ -19,5 +19,5 @@
     "meta": {
         "bolt": {"entrypoint": "cla:*"}
     },
-    "output": "build"
+    "output": "./build"
 }
