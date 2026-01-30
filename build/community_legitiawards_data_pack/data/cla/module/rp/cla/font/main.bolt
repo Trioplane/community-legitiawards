@@ -16,3 +16,44 @@ class FontTransition:
         font f"cla:screen/transition/{self.id}" {
             "providers": providers
         }
+
+font cla:ten {
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "cla:font/ten.png",
+            "height": 10,
+            "ascent": 5,
+            "chars": [
+                "abcdef",
+                "ghijkl",
+                "mnopqr",
+                "stuvwx",
+                "yz0123",
+                "456789",
+                "'_\u0000\u0000\u0000\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "cla:font/ten.png",
+            "height": 10,
+            "ascent": 5,
+            "chars": [
+                "ABCDEF",
+                "GHIJKL",
+                "MNOPQR",
+                "STUVWX",
+                "YZ\u0000\u0000\u0000\u0000",
+                "\u0000\u0000\u0000\u0000\u0000\u0000",
+                "\u0000\u0000\u0000\u0000\u0000\u0000"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+                " ": 4
+            }
+        }
+    ]
+}
