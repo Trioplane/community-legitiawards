@@ -1,0 +1,103 @@
+from cla:rp/cla/items/main import OversizedInGuiItemModel
+
+categories = [
+    "w_woty",
+    "w_innovation",
+    "w_aesthetics",
+    "w_fun",
+    "w_story",
+    "w_simulator",
+    "w_fighting",
+    "w_experimental",
+    "w_game_direction",
+    "w_music",
+    "w_audio_design",
+    "w_dp_perf",
+    "w_dp_quality",
+    "w_rp_textures_models",
+    "w_rp_shaders",
+    "w_rp_audio",
+    "w_build",
+    "w_most_anticipated",
+    "p_leader",
+    "p_solo_dev",
+    "p_team",
+    "p_data_packer",
+    "p_functions",
+    "p_world_gen_structures",
+    "p_resource_packer",
+    "p_texturing",
+    "p_modelling",
+    "p_shaders",
+    "p_sound_design",
+]
+
+for category in categories:
+    if (category != "w_woty"):
+        model f"cla:item/gui/{category}" {
+        	"format_version": "1.21.6",
+        	"credit": "Made with Blockbench",
+        	"ambientocclusion": false,
+        	"textures": {
+        		"0": f"cla:item/gui/{category}"
+        	},
+        	"elements": [
+        		{
+        			"from": [-16, -16, 8],
+        			"to": [32, 32, 8],
+        			"shade": false,
+        			"light_emission": 15,
+        			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+        			"faces": {
+        				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+        				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+        				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+        				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+        				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+        				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+        			}
+        		}
+        	],
+        	"gui_light": "front",
+        	"display": {
+        		"gui": {
+        			"translation": [18, -32, 0],
+        			"scale": [4, 4, 4]
+        		}
+        	}
+        }
+    else:
+        model f"cla:item/gui/{category}" {
+        	"format_version": "1.21.6",
+        	"credit": "Made with Blockbench",
+        	"ambientocclusion": false,
+        	"textures": {
+        		"0": f"cla:item/gui/{category}"
+        	},
+        	"elements": [
+        		{
+        			"from": [-16, -16, 8],
+        			"to": [32, 32, 8],
+        			"shade": false,
+        			"light_emission": 15,
+        			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+        			"faces": {
+        				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+        				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+        				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+        				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+        				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+        				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+        			}
+        		}
+        	],
+        	"gui_light": "front",
+        	"display": {
+        		"gui": {
+        			"translation": [18, -53, 0],
+        			"scale": [1.4, 1.4, 1.4]
+        		}
+        	}
+        }
+
+    OversizedInGuiItemModel(f"gui/{category}")

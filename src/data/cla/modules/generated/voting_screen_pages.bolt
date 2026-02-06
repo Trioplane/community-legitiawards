@@ -1,0 +1,23 @@
+for i in range(0, 28):
+    function f"cla:generated/voting_screen_pages/cla_nominee_{i}":
+        summon item_display ~13 ~5.6 ~ {\
+            item: {id: "poppy", components: {item_model: "cla:screen/voting/cla_nominee", custom_model_data: {strings: [str(i)]}}}, \
+            transformation: { \
+                translation: [0f,0f,0f], \
+                scale: [9f,9f,1f], \
+                left_rotation: [0f,0f,0f,1f], \
+                right_rotation: [0f,0f,0f,1f], \
+            }, \
+            brightness: {block: 15, sky: 15}, \
+            Tags: ["cla.screen.element","cla.screen.element.image"] \
+        }  
+
+function cla:generated/voting_screen_pages/voting_loop_run:
+    for i in range(0, 28):
+        execute if score #screen.temp.voting_loop.next_index cla.math matches i run data modify storage cla:screen switch.page set value f"voting/cla_nominee_{i}"
+    
+    data modify storage cla:screen switch.transition set value "slash"
+    function cla:screen/transition_to_page
+
+    scoreboard players add #screen.temp.voting_loop.next_index cla.math 1
+    execute if score #screen.temp.voting_loop.next_index cla.math matches 29.. run scoreboard players set #screen.temp.voting_loop.next_index cla.math 0

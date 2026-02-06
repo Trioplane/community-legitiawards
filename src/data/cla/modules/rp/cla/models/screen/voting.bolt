@@ -1,0 +1,31 @@
+from cla:rp/cla/items/main import VariantItemModel
+
+for i in range(0, 28):
+    model f"cla:item/screen/voting/cla_nominee_{i}" {
+    	"ambientocclusion": false,
+    	"textures": {
+    		"0": f"cla:item/screen/voting/cla_nominee-{i}",
+    	},
+    	"elements": [
+    		{
+    			"from": [-16, -3, 8],
+    			"to": [32, 30.77778, 8],
+    			"rotation": {"angle": 0, "axis": "y", "origin": [7, -3, 7]},
+                "shade": false,
+			    "light_emission": 15,
+    			"faces": {
+    				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+    				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+    				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+    				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+    				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+    				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+    			}
+    		}
+    	]
+    }
+
+variants = []
+for i in range(0, 28):
+    variants.append(str(i))
+VariantItemModel("screen/voting/cla_nominee", variants)

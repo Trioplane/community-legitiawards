@@ -1,3 +1,0 @@
-from cla:rp/cla/items/main import VariantItemModel
-
-VariantItemModel("deco/title", ["full", "top", "bottom"])

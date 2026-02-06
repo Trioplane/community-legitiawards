@@ -1,0 +1,571 @@
+class NomineeWorld:
+    def __init__(self, world_id, author, icon):
+        self.world_id = f".w.{world_id}"
+        self.author = author
+        self.icon = icon
+
+    def build_item(self, slot, category):
+        if (self.icon != "player_head"):
+            item replace entity @s f"enderchest.{slot}" with poppy[
+                item_model = self.icon, 
+                item_name = {translate: self.world_id, font: "cla:ten"}, 
+                lore = ["", [{text: f"by {self.author} ", color: "gray"}, {player: self.author, color: "white"}]], 
+                tooltip_style = "voting", 
+                custom_data = {cla: {ui: 
+                { 
+                    is_button: true, 
+                    no_inventory: true, 
+                    button: { 
+                        on_click: { 
+                            function: "cla:ui/ender_chest/on_click/vote/run", 
+                            data: {category: category, nominee: self.world_id}, 
+                        } 
+                }}}} 
+            ]
+        else:
+            item replace entity @s f"enderchest.{slot}" with poppy[
+                item_model = self.icon, 
+                profile = self.author,
+                tooltip_display = {hidden_components:["profile"]},
+                item_name = {translate: self.world_id, font: "cla:ten"}, 
+                lore = ["", [{text: f"by {self.author} ", color: "gray"}, {player: self.author, color: "white"}]], 
+                tooltip_style = "voting", 
+                custom_data = {cla: {ui: 
+                { 
+                    is_button: true, 
+                    no_inventory: true, 
+                    button: { 
+                        on_click: { 
+                            function: "cla:ui/ender_chest/on_click/vote/run", 
+                            data: {category: category, nominee: self.world_id}, 
+                        } 
+                }}}} 
+            ]
+
+class NomineeWorldTeam:
+    def __init__(self, world_id, team_name, authors, icon):
+        self.world_id = f".w.{world_id}"
+        self.team_name = team_name
+        self.authors = authors
+        self.icon = icon
+
+    def build_item(self, slot, category):
+        description = ["", [{text: f"by {self.team_name} ", color: "gray"}]]
+        for author in self.authors:
+            description[1].append({player: author, color: "white"})
+
+        if (self.icon != "player_head"):
+            item replace entity @s f"enderchest.{slot}" with poppy[
+                item_model = self.icon, 
+                item_name = {translate: self.world_id, font: "cla:ten"}, 
+                lore = description,
+                tooltip_style = "voting", 
+                custom_data = {cla: {ui: 
+                { 
+                    is_button: true, 
+                    no_inventory: true, 
+                    button: { 
+                        on_click: { 
+                            function: "cla:ui/ender_chest/on_click/vote/run", 
+                            data: {category: category, nominee: self.world_id}, 
+                        } 
+                }}}} 
+            ]
+        else:
+            item replace entity @s f"enderchest.{slot}" with poppy[
+                item_model = self.icon,
+                profile = self.authors[0],
+                tooltip_display = {hidden_components:["profile"]},
+                item_name = {translate: self.world_id, font: "cla:ten"}, 
+                lore = description,
+                tooltip_style = "voting", 
+                custom_data = {cla: {ui: 
+                { 
+                    is_button: true, 
+                    no_inventory: true, 
+                    button: { 
+                        on_click: { 
+                            function: "cla:ui/ender_chest/on_click/vote/run", 
+                            data: {category: category, nominee: self.world_id}, 
+                        } 
+                }}}} 
+            ]
+
+class NomineePlayer:
+    def __init__(self, player):
+        self.name = player
+        self.player_id = f".p.{player}".lower()
+
+    def build_item(self, slot, category):
+        item replace entity @s f"enderchest.{slot}" with poppy[
+            item_model = "player_head",
+            profile = self.name,
+            tooltip_display = {hidden_components: ["profile"]},
+            item_name = [{translate: self.player_id, font: "cla:ten"}, " ", {player: self.name}],
+            tooltip_style = "voting", 
+            custom_data = {cla: {ui: 
+            { 
+                is_button: true, 
+                no_inventory: true, 
+                button: { 
+                    on_click: { 
+                        function: "cla:ui/ender_chest/on_click/vote/run", 
+                        data: {category: category, nominee: self.player_id}, 
+                    } 
+            }}}} 
+        ]
+
+class NomineeTeam:
+    def __init__(self, team_id, players, icon):
+        self.team_id = f".p.{team_id}".lower()
+        self.players = players
+        self.icon = icon
+
+    def build_item(self, slot, category):
+        title = [{translate: self.team_id, font: "cla:ten"}, " "]
+        for player in self.players:
+            title.append({"player": player})
+
+        item replace entity @s f"enderchest.{slot}" with poppy[
+            item_model = self.icon, 
+            item_name = title, 
+            tooltip_style = "voting", 
+            custom_data = {cla: {ui: 
+            { 
+                is_button: true, 
+                no_inventory: true, 
+                button: { 
+                    on_click: { 
+                        function: "cla:ui/ender_chest/on_click/vote/run", 
+                        data: {category: category, nominee: self.team_id}, 
+                    } 
+            }}}} 
+        ]
+
+worlds = {
+    battletrain: NomineeWorld("battletrain", "Arvelyx", "minecart"),
+    scrapsurv: NomineeWorld("scrapsurv", "Alixindria", "iron_ingot"),
+    nideas: NomineeWorld("nideas", "Ragebird7200", "light"),
+    blockfort: NomineeWorld("blockfort", "visendim", "target"),
+    ncc: NomineeWorld("ncc", "mmmmmaaaaaxxxxx", "warped_fungus_on_a_stick"),
+    srs: NomineeWorld("srs", "NderHAM", "sculk"),
+    projectfight: NomineeWorld("projectfight", "Trplnr", "shaper_armor_trim_smithing_template"),
+    nightshifts: NomineeWorld("nightshifts", "hmmbarden", "player_head"),
+    lobby: NomineeWorldTeam("lobby", "Legitimoose Community", ["Legitermoose"], "compass"),
+    bnp: NomineeWorld("bnp", "Pqwp", "recovery_compass"),
+    schmoove: NomineeWorld("schmoove", "chopstickwater", "breeze_rod"),
+    chaosbox: NomineeWorld("chaosbox", "strategist272", "tnt"),
+    bootlegbl: NomineeWorld("bootlegbl", "RedSyven", "totem_of_undying"),
+    saabw: NomineeWorld("saabw", "Trplnr", "brick_slab"),
+    tpof: NomineeWorld("tpof", "Squirellify", "orange_stained_glass_pane"),
+    massf: NomineeWorldTeam("massf", "Massive Failures", ["DaCommander31", "Shmepppp", "NightStealer_00", "strategist272"], "skeleton_skull"),
+    facbuild: NomineeWorld("facbuild", "devilexe3", "blast_furnace"),
+    walksim: NomineeWorld("walksim", "Tushka___", "chainmail_boots"),
+    pantheon: NomineeWorld("pantheon", "HappyPacman", "ender_eye"),
+    polaroid: NomineeWorld("polaroid", "Legitermoose", "spyglass"),
+    nes: NomineeWorld("nes", "GetCmdRolled", "player_head"),
+    repaire: NomineeWorldTeam("repaire", "Railroad Xing", ["Arvelyx", "nnebes", "Alixindria", "chopstickwater"], "test_block"),
+    wwwip: NomineeWorld("wwwip", "Joellizzy", "red_sand"),
+    codefire: NomineeWorldTeam(
+        "codefire", 
+        "Arvelyx (and others)", 
+        [
+            "Arvelyx", 
+            "I_AM_DIRT", 
+            "Alixindria", 
+            "chopstickwater", 
+            "hmmbarden",
+            "nnebes",
+            "HappyPacman",
+            "Shmepppp",
+            "SmoothTurtle872",
+            "Tushka___",
+            "NderHAM",
+            "Trplnr",
+            "DaCommander31",
+            "CJF1",
+            "Greaful",
+            "mmmmmaaaaaxxxxx",
+            "NightStealer_00",
+            "PolishKrowa",
+            "ImSiriusBoi",
+            "strategist272",
+            "visendim",
+        ], 
+        "flint_and_steel"
+    ),
+    mecf: NomineeWorldTeam("mecf", "Toasted Brick Wall", ["Tushka___", "SmoothTurtle872", "Trplnr", "LilTerror11"], "mace"),
+    tron: NomineeWorld("tron", "SukiManu", "blue_stained_glass_pane"),
+    projend: NomineeWorldTeam("projend", "CJDev, GetCmdRolled, and Raeffey", ["CJDev", "GetCmdRolled", "Raeffey"], "player_head"),
+    battlebuild: NomineeWorld("battlebuild", "Joellizzy", "cobblestone"),
+    altitude: NomineeWorld("altitude", "DerpKing11", "vault"),
+    ghb2: NomineeWorld("ghb2", "GhostScoutw", "netherite_helmet"),
+}
+
+categories = {
+    w_woty: [
+        worlds.battletrain,
+        worlds.scrapsurv,
+        worlds.nideas,
+        worlds.blockfort,
+    ],
+    w_innovation: [
+        worlds.ncc,
+        worlds.srs,
+        worlds.projectfight,
+        worlds.nightshifts,
+    ],
+    w_aesthetics: [
+        worlds.srs,
+        worlds.nightshifts,
+        worlds.lobby
+    ],
+    w_fun: [
+        worlds.bnp,
+        worlds.schmoove,
+        worlds.chaosbox,
+        worlds.bootlegbl
+    ],
+    w_story: [
+        worlds.saabw,
+        worlds.tpof,
+        worlds.massf
+    ],
+    w_simulator: [
+        worlds.facbuild,
+        worlds.walksim,
+        worlds.saabw
+    ],
+    w_fighting: [
+        worlds.pantheon,
+        worlds.blockfort,
+        worlds.bootlegbl,
+        worlds.scrapsurv,
+        worlds.ncc
+    ],
+    w_experimental: [
+        worlds.polaroid,
+        worlds.nightshifts,
+        worlds.nes
+    ],
+    w_game_direction: [
+        worlds.repaire,
+        worlds.wwwip,
+        worlds.bootlegbl,
+        worlds.schmoove,
+        worlds.codefire
+    ],
+    w_music: [
+        worlds.massf,
+        worlds.chaosbox,
+        worlds.walksim,
+        worlds.bnp
+    ],
+    w_audio_design: [
+        worlds.srs,
+        worlds.battletrain,
+        worlds.repaire,
+        worlds.mecf
+    ],
+    w_dp_perf: [
+        worlds.blockfort,
+        worlds.bnp,
+        worlds.tron
+    ],
+    w_dp_quality: [
+        worlds.codefire,
+        worlds.projectfight,
+        worlds.wwwip
+    ],
+    w_rp_textures_models: [
+        worlds.scrapsurv,
+        worlds.nightshifts,
+        worlds.projectfight,
+        worlds.srs
+    ],
+    w_rp_shaders: [
+        worlds.srs,
+        worlds.projend
+    ],
+    w_rp_audio: [
+        worlds.srs,
+        worlds.massf
+    ],
+    w_build: [
+        worlds.nideas,
+        worlds.battlebuild,
+        worlds.altitude,
+        worlds.lobby
+    ],
+    w_most_anticipated: [
+        worlds.codefire,
+        worlds.wwwip,
+        worlds.ghb2,
+        worlds.projectfight
+    ],
+    p_leader: [
+        NomineePlayer("Arvelyx"),
+        NomineePlayer("hmmbarden"),
+        NomineePlayer("Greaful"),
+    ],
+    p_solo_dev: [
+        NomineePlayer("hmmbarden"),
+        NomineePlayer("chopstickwater"),
+        NomineePlayer("Alixindria"),
+        NomineePlayer("NderHAM"),
+    ],
+    p_team: [
+        NomineeTeam("massive_failures", ["DaCommander31", "Shmepppp", "NightStealer_00", "strategist272"], "skeleton_skull"),
+        NomineeTeam("railroad_xing", ["Arvelyx", "nnebes", "Alixindria", "chopstickwater"], "rail"),
+        NomineeTeam("toasted_brick_wall", ["Tushka___", "SmoothTurtle872", "Trplnr", "LilTerror11"], "bricks"),
+    ],
+    p_data_packer: [
+        NomineePlayer("123ItsAMe"),
+        NomineePlayer("hmmbarden"),
+        NomineePlayer("Trplnr"),
+        NomineePlayer("Alixindria"),
+    ],
+    p_functions: [
+        NomineePlayer("hmmbarden"),
+        NomineePlayer("I_AM_DIRT"),
+    ],
+    p_world_gen_structures: [
+        NomineePlayer("NightStealer_00"),
+        NomineePlayer("NderHAM"),
+        NomineePlayer("DaCommander31"),
+    ],
+    p_resource_packer: [
+        NomineePlayer("Trplnr"),
+        NomineePlayer("hmmbarden"),
+        NomineePlayer("NderHAM"),
+        NomineePlayer("Alixindria"),
+    ],
+    p_texturing: [
+        NomineePlayer("Trplnr"),
+        NomineePlayer("Alixindria"),
+        NomineePlayer("hmmbarden"),
+    ],
+    p_modelling: [
+        NomineePlayer("Trplnr"),
+        NomineePlayer("Alixindria"),
+        NomineePlayer("hmmbarden"),
+    ],
+    p_shaders: [
+        NomineePlayer("NderHAM"),
+        NomineePlayer("CJDev"),
+    ],
+    p_sound_design: [
+        NomineePlayer("nnebes"),
+        NomineePlayer("DaCommander31"),
+        NomineePlayer("hmmbarden"),
+    ]
+}
+
+# ty chatgpt lmao i was too lazy chat
+def get_slot_indices(start, end, count, gap=1):
+    slots = []
+    step = gap + 1
+    total_slots = end - start + 1
+
+    # max possible items with this gap
+    max_items = (total_slots + gap) // step
+    count = min(count, max_items)
+
+    # compute first slot
+    center = (start + end) // 2
+    if count % 2 == 1:
+        # odd: include center
+        slots.append(center)
+        for i in range(1, (count // 2) + 1):
+            slots.append(center - i * step)
+            slots.append(center + i * step)
+    else:
+        # even: symmetric around center (no center)
+        for i in range(count // 2):
+            slots.append(center - step // 2 - i * step)
+            slots.append(center + step // 2 + i * step)
+
+    return sorted(slots)
+#------
+
+for i, category in enumerate(categories):
+    function f"cla:generated/voting_pages/{category}":
+        scoreboard players set @s cla.ui.ender_chest.current_category i
+
+        bg_slots = get_slot_indices(0, 8, len(categories[category]))
+        button_slots = get_slot_indices(9, 17, len(categories[category]))
+
+        for j, nominee in enumerate(categories[category]):
+            nominee.build_item(button_slots[j], i)
+
+        # ---------------------------
+
+        for slot in bg_slots:
+            item replace entity @s f"enderchest.{slot}" with poppy[\
+                item_model = "cla:gui/slot", \
+                tooltip_display = {hide_tooltip: true}, \
+                custom_data = {cla: {ui: \
+                { \
+                    is_button: true, \
+                    no_inventory: true, \
+                }}} \
+            ]
+
+        #------------------
+
+        item replace entity @s enderchest.18 with poppy[\
+            item_model = "air", \
+            tooltip_display = {hide_tooltip: true}, \
+            custom_data = {cla: {ui: \
+            { \
+                is_button: true, \
+                no_inventory: true, \
+                button: { \
+                    on_click: { \
+                        function: "cla:ui/ender_chest/on_click/prev_page", \
+                    } \
+            }}}} \
+        ]
+
+        execute if function cla:ui/ender_chest/has_selected_nominee/check run item replace entity @s enderchest.26 with poppy[\
+            item_model = "air", \
+            tooltip_display = {hide_tooltip: true}, \
+            custom_data = {cla: {ui: \
+            { \
+                is_button: true, \
+                no_inventory: true, \
+                button: { \
+                    on_click: { \
+                        function: "cla:ui/ender_chest/on_click/next_page", \
+                    } \
+            }}}} \
+        ]
+
+        execute unless function cla:ui/ender_chest/has_selected_nominee/check run item replace entity @s enderchest.19 with poppy[\
+            item_model = "cla:gui/vote", \
+            tooltip_display = {hide_tooltip: true}, \
+            custom_data = {cla: {ui: \
+            { \
+                is_button: true, \
+                no_inventory: true, \
+            }}} \
+        ]
+
+        execute if function cla:ui/ender_chest/has_selected_nominee/check run item replace entity @s enderchest.19 with poppy[\
+            item_model = "cla:gui/vote_selected", \
+            tooltip_display = {hide_tooltip: true}, \
+            custom_data = {cla: {ui: \
+            { \
+                is_button: true, \
+                no_inventory: true, \
+            }}} \
+        ]
+        
+        item replace entity @s enderchest.21 with poppy[\
+            item_model = f"cla:gui/{category}", \
+            tooltip_display = {hide_tooltip: true}, \
+            custom_data = {cla: {ui: \
+            { \
+                is_button: true, \
+                no_inventory: true, \
+            }}} \
+        ]
+
+        item replace entity @s enderchest.22 with poppy[\
+        item_model = "cla:gui/info", \
+        item_name = {translate: f".c.{i}", color: "gray", italic: true},
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+        }}} \
+    ]
+
+function cla:generated/voting_pages/start:
+    item replace entity @s enderchest.4 with poppy[\
+        item_model = "cla:gui/vote_button", \
+        tooltip_display = {hide_tooltip: true}, \
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+        }}} \
+    ]
+    item replace entity @s enderchest.13 with poppy[\
+        item_model = "air", \
+        item_name = "Start voting",
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+            button: { \
+                on_click: { \
+                    function: "cla:ui/ender_chest/on_click/next_page", \
+                } \
+        }}}} \
+    ]
+    item replace entity @s enderchest.22 with poppy[\
+        item_model = "cla:gui/info", \
+        item_name = {text: "30 total categories, 44 nominees.", color: "gray", italic: true},
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+        }}} \
+    ]
+
+function cla:generated/voting_pages/submit:
+    item replace entity @s enderchest.18 with poppy[\
+        item_model = "air", \
+        tooltip_display = {hide_tooltip: true}, \
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+            button: { \
+                on_click: { \
+                    function: "cla:ui/ender_chest/on_click/prev_page", \
+                } \
+        }}}} \
+    ]
+    item replace entity @s enderchest.19 with poppy[\
+        item_model = "cla:gui/vote", \
+        tooltip_display = {hide_tooltip: true}, \
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+        }}} \
+    ]
+    item replace entity @s enderchest.4 with poppy[\
+        item_model = "cla:gui/submit", \
+        tooltip_display = {hide_tooltip: true}, \
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+        }}} \
+    ]
+    item replace entity @s enderchest.13 with poppy[\
+        item_model = "air", \
+        item_name = "Submit and lock votes",
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+            button: { \
+                on_click: { \
+                    function: "cla:ui/ender_chest/on_click/submit", \
+                } \
+        }}}} \
+    ]
+    item replace entity @s enderchest.22 with poppy[\
+        item_model = "cla:gui/info", \
+        item_name = {text: "Once you submit, you cannot vote again!", color: "gray", italic: true},
+        lore = [{text: "Continue if you are sure with your votes.", color: "gray", italic: true}],
+        custom_data = {cla: {ui: \
+        { \
+            is_button: true, \
+            no_inventory: true, \
+        }}} \
+    ]

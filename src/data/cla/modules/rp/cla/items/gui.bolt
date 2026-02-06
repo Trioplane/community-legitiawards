@@ -3,3 +3,28 @@ from cla:rp/cla/items/main import OversizedInGuiItemModel
 OversizedInGuiItemModel("gui/vote")
 OversizedInGuiItemModel("gui/vote_selected")
 OversizedInGuiItemModel("gui/slot")
+OversizedInGuiItemModel("gui/submit")
+OversizedInGuiItemModel("gui/info")
+
+item_model cla:gui/vote_button {
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "cla:item/gui/vote_button_in_hand"
+        },
+        "when": [
+          "in_hand",
+        ]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "cla:item/gui/vote_button"
+    },
+    "property": "minecraft:custom_model_data"
+  },
+  "oversized_in_gui": true
+}
