@@ -1,4 +1,5 @@
-from cla:rp/cla/items/main import BasicItemModel
+from cla:rp/cla/items/main import BasicItemModel, VariantItemModel
 
 BasicItemModel("deco/table")
 BasicItemModel("deco/chair")
+VariantItemModel("deco/pulsing_bars", ["on", "off"])

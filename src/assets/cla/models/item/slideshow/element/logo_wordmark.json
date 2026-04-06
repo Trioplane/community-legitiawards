@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [216, 152],
+	"textures": {
+		"0": "cla:item/slideshow/element/logo_wordmark",
+		"particle": "cla:item/slideshow/element/logo_wordmark"
+	},
+	"elements": [
+		{
+			"from": [-5.5, 0.5, 8],
+			"to": [21.5, 19.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10.5, 1.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [1.40741, 1.02924, 1.40741, 3.02924], "texture": "#missing"},
+				"west": {"uv": [0, 1.02924, 0, 3.02924], "texture": "#missing"},
+				"up": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"down": {"uv": [0, 2, 2, 2], "texture": "#missing"}
+			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+from cla:rp/cla/items/main import BasicItemModel
+
+BasicItemModel("slideshow/element/main_bg")
+BasicItemModel("slideshow/element/logo_wordmark")
+BasicItemModel("slideshow/element/nominees_text_bg")
+BasicItemModel("slideshow/element/categories_nominees_amount")
+BasicItemModel("slideshow/element/cla_nominee-0")
