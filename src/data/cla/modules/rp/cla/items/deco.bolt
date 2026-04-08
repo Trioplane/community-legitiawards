@@ -2,4 +2,38 @@ from cla:rp/cla/items/main import BasicItemModel, VariantItemModel
 
 BasicItemModel("deco/table")
 BasicItemModel("deco/chair")
-VariantItemModel("deco/pulsing_bars", ["on", "off"])
+
+item_model cla:deco/pulsing_bars {
+    "model": {
+        "type": "select",
+        "property": "custom_model_data",
+        "index": 0,
+        "cases": [
+            {
+                "when": "on",
+                "model": {
+                    "type": "model",
+                    "model": "cla:item/deco/pulsing_bars_on",
+                    "tints": [
+                        {
+                            "type": "minecraft:custom_model_data",
+                            "index": 0,
+                            "default": 16777215
+                        }
+                    ]
+                }
+            },
+            {
+                "when": "off",
+                "model": {
+                    "type": "model",
+                    "model": "cla:item/deco/pulsing_bars_off"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "model",
+            "model": "cla:item/deco/pulsing_bars_on"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+from cla:rp/cla/font/main import FontTransition
+
+FontTransition("slash")
+FontTransition("cla_in")
+FontTransition("cla_out")
+FontTransition("color_slide_up")
+FontTransition("tie_transition")

@@ -7,13 +7,32 @@ class FontTransition:
         for i in range(1,41):
             providers.append({
                 "type": "bitmap",
-                "file": f"cla:font/screen/transition/{self.id}/{i}.png",
+                "file": f"cla:font/slideshow/transition/{self.id}/{i}.png",
                 "height": 256,
                 "ascent": 128,
                 "chars": [chr(int(f"E0{i:02d}", 16))],
             })
 
-        font f"cla:screen/transition/{self.id}" {
+        font f"cla:slideshow/transition/{self.id}" {
+            "providers": providers
+        }
+
+class AnimatedElement:
+    def __init__(self, id, frames, size):
+        self.id = id
+
+        providers = []
+
+        for i in range(1,frames+1):
+            providers.append({
+                "type": "bitmap",
+                "file": f"cla:font/slideshow/element/{self.id}/{i}.png",
+                "height": size,
+                "ascent": size / 2,
+                "chars": [chr(int(f"E0{i:02d}", 16))],
+            })
+
+        font f"cla:slideshow/element/{self.id}" {
             "providers": providers
         }
 

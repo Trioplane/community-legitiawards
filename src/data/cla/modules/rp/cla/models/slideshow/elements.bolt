@@ -1,7 +1,41 @@
 from cla:rp/cla/items/main import BasicItemModel
+from cla:rp/cla/font/main import AnimatedElement
 
 BasicItemModel("slideshow/element/main_bg")
+BasicItemModel("slideshow/element/tie_bg")
+BasicItemModel("slideshow/element/woty_bg")
 BasicItemModel("slideshow/element/logo_wordmark")
 BasicItemModel("slideshow/element/nominees_text_bg")
+BasicItemModel("slideshow/element/lower_third_bg")
 BasicItemModel("slideshow/element/categories_nominees_amount")
-BasicItemModel("slideshow/element/cla_nominee-0")
+
+AnimatedElement("animated_purple_border", 20, 256)
+AnimatedElement("voter_count", 74, 96)
+
+# WINNER TITLES
+AnimatedElement("title_arvelyx", 20, 256)
+AnimatedElement("title_battle_train", 20, 256)
+AnimatedElement("title_block_fortress", 20, 256)
+AnimatedElement("title_bootleg_blowout", 20, 256)
+AnimatedElement("title_chaos_box", 20, 256)
+AnimatedElement("title_codename_fire", 20, 256)
+AnimatedElement("title_factory_builder", 20, 256)
+AnimatedElement("title_hmmbarden", 20, 256)
+AnimatedElement("title_mass_failure", 20, 256)
+AnimatedElement("title_massive_failures", 20, 256)
+AnimatedElement("title_ncc_arena", 20, 256)
+AnimatedElement("title_nderham", 20, 256)
+AnimatedElement("title_night_shifts", 20, 256)
+AnimatedElement("title_nightstealer_00", 20, 256)
+AnimatedElement("title_polaroid_camera", 20, 256)
+AnimatedElement("title_srs_amber", 20, 256)
+AnimatedElement("title_the_lobby", 20, 256)
+AnimatedElement("title_trplnr", 20, 256)
+
+# PLAYERS
+AnimatedElement("player_arvelyx", 40, 256)
+AnimatedElement("team_massive_failures", 40, 256)
+AnimatedElement("player_hmmbarden", 40, 256)
+AnimatedElement("player_nightstealer_00", 40, 256)
+AnimatedElement("player_trplnr", 40, 256)
+AnimatedElement("player_nderham", 40, 256)
