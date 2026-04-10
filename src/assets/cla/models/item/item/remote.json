@@ -39,7 +39,7 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [7, 11, 3]},
 			"faces": {
 				"north": {"uv": [2, 0, 4, 2], "texture": "#0"},
-				"east": {"uv": [5, 7, 7, 9], "texture": "#missing"},
+				"east": {"uv": [2, 0, 4, 2], "texture": "#0"},
 				"south": {"uv": [2, 0, 4, 2], "texture": "#0"},
 				"west": {"uv": [2, 0, 4, 2], "texture": "#0"},
 				"up": {"uv": [2, 0, 4, 2], "texture": "#0"},

@@ -4,9 +4,11 @@ from cla:rp/cla/font/main import AnimatedElement
 BasicItemModel("slideshow/element/main_bg")
 BasicItemModel("slideshow/element/tie_bg")
 BasicItemModel("slideshow/element/woty_bg")
+BasicItemModel("slideshow/element/minor_category_bg")
 BasicItemModel("slideshow/element/logo_wordmark")
 BasicItemModel("slideshow/element/nominees_text_bg")
 BasicItemModel("slideshow/element/lower_third_bg")
+BasicItemModel("slideshow/element/woty_lower_third_bg")
 BasicItemModel("slideshow/element/categories_nominees_amount")
 
 AnimatedElement("animated_purple_border", 20, 256)
@@ -31,6 +33,7 @@ AnimatedElement("title_polaroid_camera", 20, 256)
 AnimatedElement("title_srs_amber", 20, 256)
 AnimatedElement("title_the_lobby", 20, 256)
 AnimatedElement("title_trplnr", 20, 256)
+AnimatedElement("title_world_of_the_year", 44, 256)
 
 # PLAYERS
 AnimatedElement("player_arvelyx", 40, 256)
@@ -39,3 +42,10 @@ AnimatedElement("player_hmmbarden", 40, 256)
 AnimatedElement("player_nightstealer_00", 40, 256)
 AnimatedElement("player_trplnr", 40, 256)
 AnimatedElement("player_nderham", 40, 256)
+
+# ICONS
+AnimatedElement("icon_totem_of_undying", 12, 32)
+AnimatedElement("icon_skeleton_skull", 12, 32)
+AnimatedElement("icon_target", 12, 32)
+AnimatedElement("icon_flint_and_steel", 12, 32)
+AnimatedElement("icon_legitimoose_logo", 12, 32)
