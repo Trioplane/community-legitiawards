@@ -1,0 +1,30 @@
+{
+    "slideshow.best_music.blocks_n_props": {
+        "subtitle": "'Chicken Volleyball' from Blocks 'n Props plays",
+        "sounds": [{
+            "name": "cla:slideshow/best_music/blocks_n_props",
+            "stream": true
+        }]
+    },
+    "slideshow.best_music.chaos_box": {
+        "subtitle": "'The World Revolving' from Deltarune used in Chaos Box plays",
+        "sounds": [{
+            "name": "cla:slideshow/best_music/chaos_box",
+            "stream": true
+        }]
+    },
+    "slideshow.best_music.mass_failure": {
+        "subtitle": "Music from Mass Failure plays",
+        "sounds": [{
+            "name": "cla:slideshow/best_music/mass_failure",
+            "stream": true
+        }]
+    },
+    "slideshow.best_music.walksim": {
+        "subtitle": "'Rush Hour' from Walking Sim plays",
+        "sounds": [{
+            "name": "cla:slideshow/best_music/walksim",
+            "stream": true
+        }]
+    }
+}
