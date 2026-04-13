@@ -49,3 +49,6 @@ AnimatedElement("icon_skeleton_skull", 12, 32)
 AnimatedElement("icon_target", 12, 32)
 AnimatedElement("icon_flint_and_steel", 12, 32)
 AnimatedElement("icon_legitimoose_logo", 12, 32)
+
+# VIDEOS
+BasicItemModel("slideshow/element/videos/battle_train")
