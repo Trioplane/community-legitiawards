@@ -26,5 +26,19 @@
             "name": "cla:slideshow/best_music/walksim",
             "stream": true
         }]
+    },
+    "sfx.win": {
+        "subtitle": "Confetti blasts",
+        "sounds": [{
+            "name": "cla:sfx/win",
+            "stream": true
+        }]
+    },
+    "sfx.glitch": {
+        "subtitle": "Glitch",
+        "sounds": [{
+            "name": "cla:sfx/glitch",
+            "stream": true
+        }]
     }
 }
