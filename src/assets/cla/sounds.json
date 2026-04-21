@@ -30,15 +30,163 @@
     "sfx.win": {
         "subtitle": "Confetti blasts",
         "sounds": [{
-            "name": "cla:sfx/win",
-            "stream": true
+            "name": "cla:sfx/win"
         }]
     },
     "sfx.glitch": {
         "subtitle": "Glitch",
         "sounds": [{
-            "name": "cla:sfx/glitch",
-            "stream": true
+            "name": "cla:sfx/glitch"
         }]
+    },
+    "sfx.airhorn": {
+        "subtitle": "Airhorn horns",
+        "sounds": [
+            {
+                "name": "cla:sfx/airhorn",
+                "weight": 3
+            },
+            {
+                "name": "cla:sfx/airhorn",
+                "weight": 1,
+                "pitch": 0.8
+            },
+            {
+                "name": "cla:sfx/airhorn",
+                "weight": 1,
+                "pitch": 1.2
+            }
+        ]
+    },
+    "sfx.clap": {
+        "subtitle": "Clapping",
+        "sounds": [
+            {
+                "name": "cla:sfx/clap/1"
+            },
+            {
+                "name": "cla:sfx/clap/1",
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/clap/2"
+            },
+            {
+                "name": "cla:sfx/clap/2",
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/clap/3"
+            },
+            {
+                "name": "cla:sfx/clap/3",
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/clap/4"
+            },
+            {
+                "name": "cla:sfx/clap/4",
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/clap/5"
+            },
+            {
+                "name": "cla:sfx/clap/5",
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/clap/6"
+            },
+            {
+                "name": "cla:sfx/clap/6",
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/clap/7"
+            },
+            {
+                "name": "cla:sfx/clap/7",
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/clap/8"
+            },
+            {
+                "name": "cla:sfx/clap/8",
+                "pitch": 1.2
+            }
+        ]
+    },
+    "sfx.party_blower": {
+        "subtitle": "Party Blower blows",
+        "sounds": [
+            {
+                "name": "cla:sfx/party_blower/1",
+                "weight": 3
+            },
+            {
+                "name": "cla:sfx/party_blower/1",
+                "weight": 1,
+                "pitch": 0.8
+            },
+            {
+                "name": "cla:sfx/party_blower/1",
+                "weight": 1,
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/party_blower/2",
+                "weight": 3
+            },
+            {
+                "name": "cla:sfx/party_blower/2",
+                "weight": 1,
+                "pitch": 0.8
+            },
+            {
+                "name": "cla:sfx/party_blower/2",
+                "weight": 1,
+                "pitch": 1.2
+            }
+        ]
+    },
+    "sfx.shocked": {
+        "subtitle": "Shocked",
+        "sounds": [
+            {
+                "name": "cla:sfx/shocked/1",
+                "weight": 3
+            },
+            {
+                "name": "cla:sfx/shocked/1",
+                "weight": 1,
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/shocked/2",
+                "weight": 3
+            },
+            {
+                "name": "cla:sfx/shocked/2",
+                "weight": 1,
+                "pitch": 1.2
+            },
+            {
+                "name": "cla:sfx/shocked/3",
+                "weight": 3
+            },
+            {
+                "name": "cla:sfx/shocked/3",
+                "weight": 1,
+                "pitch": 0.8
+            },
+            {
+                "name": "cla:sfx/shocked/3",
+                "weight": 1,
+                "pitch": 1.2
+            }
+        ]
     }
 }
