@@ -1,4 +1,42 @@
 {
+    "music.pre_show.intro": {
+        "subtitle": "Music plays",
+        "sounds": [{
+            "name": "cla:music/pre_show/intro",
+            "stream": true
+        }]
+    },
+    "music.pre_show.loop": {
+        "sounds": [{
+            "name": "cla:music/pre_show/loop",
+            "stream": true
+        }]
+    },
+    "music.pre_show.end": {
+        "sounds": [{
+            "name": "cla:music/pre_show/end",
+            "stream": true
+        }]
+    },
+    "music.modulated_pre_show.intro": {
+        "subtitle": "Music plays",
+        "sounds": [{
+            "name": "cla:music/modulated_pre_show/intro",
+            "stream": true
+        }]
+    },
+    "music.modulated_pre_show.loop": {
+        "sounds": [{
+            "name": "cla:music/modulated_pre_show/loop",
+            "stream": true
+        }]
+    },
+    "music.modulated_pre_show.end": {
+        "sounds": [{
+            "name": "cla:music/modulated_pre_show/end",
+            "stream": true
+        }]
+    },
     "slideshow.best_music.blocks_n_props": {
         "subtitle": "'Chicken Volleyball' from Blocks 'n Props plays",
         "sounds": [{
