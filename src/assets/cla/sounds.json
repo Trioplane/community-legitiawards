@@ -1,39 +1,91 @@
 {
-    "music.pre_show.intro": {
-        "subtitle": "Music plays",
+    "music.moose_entrance_sting": {
+        "subtitle": "Sting plays",
         "sounds": [{
-            "name": "cla:music/pre_show/intro",
+            "name": "cla:music/moose_entrance_sting",
             "stream": true
         }]
     },
-    "music.pre_show.loop": {
+    "music.woty_sting": {
+        "subtitle": "Sting plays",
         "sounds": [{
-            "name": "cla:music/pre_show/loop",
+            "name": "cla:music/woty_sting",
             "stream": true
         }]
     },
-    "music.pre_show.end": {
+    "music.opening.intro": {
+        "subtitle": "Opening Act music plays",
         "sounds": [{
-            "name": "cla:music/pre_show/end",
+            "name": "cla:music/opening/intro",
             "stream": true
         }]
     },
-    "music.modulated_pre_show.intro": {
-        "subtitle": "Music plays",
+    "music.opening.loop": {
         "sounds": [{
-            "name": "cla:music/modulated_pre_show/intro",
+            "name": "cla:music/opening/loop",
             "stream": true
         }]
     },
-    "music.modulated_pre_show.loop": {
+    "music.opening.end": {
         "sounds": [{
-            "name": "cla:music/modulated_pre_show/loop",
+            "name": "cla:music/opening/end",
             "stream": true
         }]
     },
-    "music.modulated_pre_show.end": {
+    "music.modulated_opening.intro": {
+        "subtitle": "Opening Act music plays",
         "sounds": [{
-            "name": "cla:music/modulated_pre_show/end",
+            "name": "cla:music/modulated_opening/intro",
+            "stream": true
+        }]
+    },
+    "music.modulated_opening.loop": {
+        "sounds": [{
+            "name": "cla:music/modulated_opening/loop",
+            "stream": true
+        }]
+    },
+    "music.modulated_opening.end": {
+        "sounds": [{
+            "name": "cla:music/modulated_opening/end",
+            "stream": true
+        }]
+    },
+    "music.main_event.intro": {
+        "subtitle": "Main Event music plays",
+        "sounds": [{
+            "name": "cla:music/main_event/intro",
+            "stream": true
+        }]
+    },
+    "music.main_event.loop": {
+        "sounds": [{
+            "name": "cla:music/main_event/loop",
+            "stream": true
+        }]
+    },
+    "music.main_event.end": {
+        "sounds": [{
+            "name": "cla:music/main_event/end",
+            "stream": true
+        }]
+    },
+    "music.woty.intro": {
+        "subtitle": "World of the Year music plays",
+        "sounds": [{
+            "name": "cla:music/woty/loop",
+            "stream": true
+        }]
+    },
+    "music.woty.loop": {
+        "sounds": [{
+            "name": "cla:music/woty/loop",
+            "stream": true
+        }]
+    },
+    "music.woty.end": {
+        "sounds": [{
+            "name": "cla:music/woty/end",
             "stream": true
         }]
     },
