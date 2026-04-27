@@ -1,0 +1,9 @@
+{
+  "parent": "cla:item/engraved_awards/reef_template",
+  "textures": {
+    "material": "cla:item/engraved_awards/bronze_reef",
+    "face": "cla:item/engraved_awards/bronze_reef_face",
+    "winner_name": "cla:item/engraved_awards/the_lobby",
+    "category_name": "cla:item/engraved_awards/best_in_aesthetics"
+  }
+}

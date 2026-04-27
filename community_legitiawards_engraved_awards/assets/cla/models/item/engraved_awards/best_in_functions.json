@@ -1,0 +1,9 @@
+{
+  "parent": "cla:item/engraved_awards/reef_template",
+  "textures": {
+    "material": "cla:item/engraved_awards/silver_reef",
+    "face": "cla:item/engraved_awards/silver_reef_face",
+    "winner_name": "cla:item/engraved_awards/hmmbarden",
+    "category_name": "cla:item/engraved_awards/best_in_functions"
+  }
+}

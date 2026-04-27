@@ -1,0 +1,9 @@
+{
+  "parent": "cla:item/engraved_awards/reef_template",
+  "textures": {
+    "material": "cla:item/engraved_awards/golden_reef",
+    "face": "cla:item/engraved_awards/golden_reef_face",
+    "winner_name": "cla:item/engraved_awards/ncc_arena",
+    "category_name": "cla:item/engraved_awards/best_in_innovation"
+  }
+}

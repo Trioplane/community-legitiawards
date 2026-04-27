@@ -1,0 +1,51 @@
+class EngravedAward:
+    def __init__(self, material, winner_name, category_name):
+        model f"cla:item/engraved_awards/{category_name}" {
+	        "parent": "cla:item/engraved_awards/reef_template",
+        	"textures": {
+        		"material": f"cla:item/engraved_awards/{material}_reef",
+        		"face": f"cla:item/engraved_awards/{material}_reef_face",
+        		"winner_name": f"cla:item/engraved_awards/{winner_name}",
+        		"category_name": f"cla:item/engraved_awards/{category_name}"
+        	}
+        }
+
+        item_model f"cla:engraved_awards/{category_name}" {
+            "model": {
+                "type": "model",
+                "model": f"cla:item/engraved_awards/{category_name}"
+            }
+        }
+
+# world
+EngravedAward("amethyst", "battle_train", "woty")
+EngravedAward("golden", "ncc_arena", "best_in_innovation")
+EngravedAward("golden", "codename_fire", "most_anticipated_game")
+EngravedAward("golden", "factorybuilder", "best_simulator")
+EngravedAward("golden", "block_fortress", "best_fighting")
+EngravedAward("golden", "polaroid_camera", "best_experimental")
+EngravedAward("golden", "bootleg_blowout", "best_game_direction")
+EngravedAward("silver", "mass_failure", "best_music")
+EngravedAward("silver", "battle_train", "best_audio_design")
+EngravedAward("silver", "night_shifts", "best_rp_textures_models")
+EngravedAward("silver", "srs_amber", "best_rp_shaders")
+EngravedAward("silver", "mass_failure", "best_rp_audio")
+EngravedAward("bronze", "bootleg_blowout", "best_in_fun")
+EngravedAward("bronze", "the_lobby", "best_in_aesthetics")
+EngravedAward("bronze", "mass_failure", "best_story")
+EngravedAward("bronze", "block_fortress", "best_dp_performance")
+EngravedAward("bronze", "codename_fire", "best_dp_quality")
+EngravedAward("bronze", "the_lobby", "best_builds")
+
+# player
+EngravedAward("golden", "arvelyx", "best_leader")
+EngravedAward("golden", "nderham", "best_solo_developer")
+EngravedAward("golden", "the_massive_failures", "best_team")
+EngravedAward("golden", "hmmbarden", "best_data_packer")
+EngravedAward("silver", "hmmbarden", "best_in_functions")
+EngravedAward("silver", "nightstealer_00", "best_in_world_gen_and_structures")
+EngravedAward("golden", "trplnr", "best_resource_packer")
+EngravedAward("silver", "trplnr", "best_in_texturing")
+EngravedAward("silver", "trplnr", "best_in_modelling")
+EngravedAward("silver", "nderham", "best_in_shaders")
+EngravedAward("silver", "hmmbarden", "best_in_sound_design")
